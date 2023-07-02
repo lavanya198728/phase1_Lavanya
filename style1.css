@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box ;
+}
+html{
+    height:100%;
+}
+body{
+    height:100%;
+}
+.container{
+    display:grid;
+    grid-template-columns: 250px 1fr 300px;
+    height:100%;
+    overflow: hidden;
+}
+ #menu{
+    background:whitesmoke;
+ }
+ .brand-logo{
+    padding:0 30px;
+ }
+ .brand-logo img{
+    width:150px;
+    height:150px;
+    margin-top :-20px;
+ }
+ .menu-items a{
+       display:block;
+       text-decoration:none ;
+       font-size: 20px;
+       padding: 8px 30px;
+       margin:12px 0 ;
+    color:rgb(128,129,129);
+    font-weight: 300;
+ }
+ .menu-items a:hover{
+    background:rgb(250,212,218) ;
+ }
+
+ #food-container{
+    background: whitesmoke;
+    overflow:scroll;
+    overflow-x:hidden;
+    box-sizing: content-box;
+ }
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+    background: whitesmoke;
+    z-index:1;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+#header .address{
+    font-size: 20px;
+}
+.your-address
+ {
+    border:1px solid indianred;
+    color:indianred;
+    padding:5px 10px;
+    border-radius: 10px ;
+    width:150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor:pointer;
+}
+.add-box{
+    font-size: 20px;
+}
+.utill i,.user i{
+    font-size: 18px;
+    margin:0 16px;
+    border:1px solid crimson;
+    padding:8px 16px;
+    color:crimson;
+    border-radius:20px;
+    cursor:pointer; 
+}
+
+.utill i:active{
+   color:white;
+   background: crimson;
+}
+.food-items{
+
+}
+#biryani,#chicken,#pneer,#vegetable,#chinese,#southindian
+    {
+       margin-top:40px;  
+     }
+#panner #item-card,#vegetable,#item-card{
+    background:rgb(218,253,18);
+}
+#chinese #item-card,#southindian #item-card{
+background: rgb(221,243,243);
+}
+#category-name,.item-menu
+{
+    margin:10px;
+    font-size:350x;
+    color:coral;
+}
+
+#item-card
+{
+  width:180px;
+  height:220px;
+  padding:10px;
+  margin:10px;
+  display:inline-block;
+  border-radius: 5px;
+  background: rgb(253,221,226);
+  cursor:pointer;
+  transition: 0.5s all ease-in-out;
+}
+#item-card img{
+  width:120px;
+  height: 120px;
+  border-radius:50% ;
+  margin:auto;
+  display:block;
+  margin-bottom:15px;
+  transition:0.5s LL ease-in-out ;
+}
+
+
+ #Cart{
+    background:lavender ;
+ }
